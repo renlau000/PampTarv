@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pampanga Booking - Book Now</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      background-color: #758B61;
+      color: #333;
+    }
+
+    header {
+      background-color: #f78e41;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      border-radius: 15px;
+      margin: 25px;
+      box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-style: italic;
+      font-weight: 700;
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .content {
+      background-color: #727f5d;
+      margin: 0 25px 25px 25px;
+      padding: 20px 40px;
+      border-radius: 10px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .content h2 {
+      font-family: "Georgia", serif;
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: transparent;
+    }
+
+    th, td {
+      border-bottom: 2px solid #f78e41;
+      padding: 10px 15px;
+    }
+
+    th {
+      color: #f78e41;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    td {
+      color: black;
+      background-color: transparent;
+      font-weight: 600;
+    }
+
+    td:nth-child(2) {
+      font-weight: bold;
+    }
+
+    form {
+      margin-top: 20px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    label {
+      color: white;
+      font-weight: 600;
+    }
+
+    input, select {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+    }
+
+    button {
+      padding: 6px 15px;
+      font-weight: bold;
+      background-color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ddd;
+    }
+
+    .book-now {
+      position: absolute;
+      bottom: 25px;
+      right: 35px;
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+    }
+      footer img {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+    /* TABLET (max-width: 991px) */
+@media (max-width: 991px) {
+  main {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .map img {
+    width: 260px;
+  }
+
+  nav a {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+}
+
+/* MOBILE (max-width: 600px) */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+    font-size: 14px;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 20px;
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .content, .map {
+    width: 100%;
+  }
+
+  .map img {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .book-now {
+    position: static;
+    margin-top: 10px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PAMPANGA BOOKING</h1>
+    <nav>
+      <a href="figma.html">HISTORY</a>
+      <a href="churches.html">CHURCHES</a>
+      <a href="parks.html">RESTAURANTS</a>
+      <a href="parks.html">PARKS</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h2>Book Now</h2>
+    <table>
+      <tr>
+        <th>Location</th>
+        <th>Inclusion</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>1 &nbsp; Holy Rosary Church</td>
+        <td>Bus ride + Mass + Candle lighting</td>
+        <td>Php 600</td>
+      </tr>
+      <tr>
+        <td>2 &nbsp; San Guillermo Church</td>
+        <td>Bus ride + Mass + Candle lighting</td>
+        <td>Php 600</td>
+      </tr>
+      <tr>
+        <td>3 &nbsp; Aling Lucing</td>
+        <td>Bus ride + 1 dish + 1 dessert</td>
+        <td>Php 900</td>
+      </tr>
+      <tr>
+        <td>4 &nbsp; Jun jun’s</td>
+        <td>Bus ride + 1 dish + 1 dessert</td>
+        <td>Php 900</td>
+      </tr>
+      <tr>
+        <td>5 &nbsp; Cdc Park</td>
+        <td>Bus ride + Picnic time + Snacks</td>
+        <td>Php 750</td>
+      </tr>
+      <tr>
+        <td>6 &nbsp; Capital Town</td>
+        <td>Bus ride + Picnic time + Snacks</td>
+        <td>Php 750</td>
+      </tr>
+    </table>
+
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="contact">Contact Num:</label>
+      <input type="text" id="contact" name="contact" required>
+
+      <label for="order">Order Num:</label>
+      <select id="order" name="order" required>
+        <option value="">--Select--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+<footer>
+    <a href="figma.html">
+        <img src="pic/logo.jpg" class="footer-logo">
+    </a>
+</footer>
+
+
+</body>
+</html>
